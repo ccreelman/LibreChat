@@ -7,3 +7,13 @@ webSearch:
   serperApiKey: SERPER_API_KEY
   firecrawlApiKey: FIRECRAWL_API_KEY
   jinaApiKey: JINA_API_KEY
+
+version: 1.0.0
+
+modelSpecs:
+  - name: "claude-3-opus"
+    promptCache: true
+  - name: "claude-3-sonnet"
+    promptCache: true
+  - name: "claude-3-haiku"
+    promptCache: true  
