@@ -1,0 +1,7 @@
+webSearch:
+  searchProvider: serper
+  scraperProvider: firecrawl
+  rerankerType: jina
+  serperApiKey: SERPER_API_KEY
+  firecrawlApiKey: FIRECRAWL_API_KEY
+  jinaApiKey: JINA_API_KEY
