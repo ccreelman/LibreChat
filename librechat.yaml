@@ -1,19 +1,24 @@
-version: 1.0.0
+version: 1.2.1
+cache: true
+
+interface:
+  webSearch: true
 
 webSearch:
-  searchProvider: serper
-  scraperProvider: firecrawl
-  rerankerType: jina
-  serperApiKey: SERPER_API_KEY
-  firecrawlApiKey: FIRECRAWL_API_KEY
-  jinaApiKey: JINA_API_KEY
+  searchProvider: "serper"
+  scraperProvider: "firecrawl"
+  rerankerType: "jina"
+  serperApiKey: "${SERPER_API_KEY}"
+  firecrawlApiKey: "${FIRECRAWL_API_KEY}"
+  jinaApiKey: "${JINA_API_KEY}"
 
-version: 1.0.0
-
-modelSpecs:
-  - name: "claude-3-opus"
+endpoints:
+  anthropic:
+    apiKey: "${ANTHROPIC_API_KEY}"
+    models:
+      default:
+        - "claude-3-opus-20240229"
+        - "claude-3-5-sonnet-20241022"
+        - "claude-3-haiku-20240307"
+    titleModel: "claude-3-haiku-20240307"
     promptCache: true
-  - name: "claude-3-sonnet"
-    promptCache: true
-  - name: "claude-3-haiku"
-    promptCache: true  
