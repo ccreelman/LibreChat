@@ -20,5 +20,5 @@ endpoints:
     titleModel: "claude-haiku-4-5"
     promptCache: true
     resendFiles: false
-    summarize: true
+    summarize: false
     summaryModel: "claude-haiku-4-5"
