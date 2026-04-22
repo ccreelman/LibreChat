@@ -21,3 +21,7 @@ endpoints:
   - "claude-opus-4-7"   
     titleModel: "claude-haiku-4-5"
     promptCache: true
+
+resendFiles: false
+summarize: true
+summaryModel: "claude-haiku-4-5"
