@@ -16,8 +16,8 @@ endpoints:
   anthropic:
     apiKey: "${ANTHROPIC_API_KEY}"
     models:
-      - "claude-opus-4-7"
-      - "claude-sonnet-4-6"
-      - "claude-haiku-4-5"
+  - "claude-sonnet-4-6"   
+  - "claude-haiku-4-5"
+  - "claude-opus-4-7"   
     titleModel: "claude-haiku-4-5"
     promptCache: true
