@@ -1,5 +1,7 @@
 version: 1.2.1
 cache: true
+titleModel: 'gemini-2.5-flash'
+summarize: false
 
 interface:
   webSearch: true
@@ -11,14 +13,17 @@ webSearch:
   jinaApiKey: "${JINA_API_KEY}"
 
 endpoints:
-  anthropic:
-    apiKey: "${ANTHROPIC_API_KEY}"
-    models:
-      - "claude-sonnet-4-6"
-      - "claude-haiku-4-5"
-      - "claude-opus-4-7"
-    titleModel: "claude-haiku-4-5"
-    promptCache: true
-    resendFiles: false
-    summarize: false
-    summaryModel: "claude-haiku-4-5"
+  google:
+    apiKey: '${GOOGLE_KEY}'
+    fileConfig:
+      supportedMimeTypes:
+        - image/jpeg
+        - image/png
+        - image/webp
+        - image/heic
+        - image/heif
+        - text/plain
+        - text/markdown
+        - application/pdf
+        - application/msword
+        - application/vnd.openxmlformats-officedocument.wordprocessingml.document
