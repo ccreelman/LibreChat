@@ -1,7 +1,5 @@
 version: 1.2.1
 cache: true
-titleModel: 'gemini-2.5-flash'
-summarize: false
 
 interface:
   webSearch: true
