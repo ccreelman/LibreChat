@@ -15,14 +15,45 @@ endpoints:
     apiKey: '${GOOGLE_KEY}'
     fileConfig:
       supportedMimeTypes:
+        # === Image Formats ===
         - image/jpeg
-        - image/bmp
         - image/png
         - image/webp
         - image/heic
         - image/heif
+        - image/bmp
+        - image/gif
+        - image/svg+xml
+
+        # === Document Formats ===
+        - application/pdf
+        - application/msword # .doc
+        - application/vnd.openxmlformats-officedocument.wordprocessingml.document # .docx
+        - application/vnd.ms-powerpoint # .ppt
+        - application/vnd.openxmlformats-officedocument.presentationml.presentation # .pptx
+
+        # === Data Formats ===
         - text/plain
         - text/markdown
-        - application/pdf
-        - application/msword
-        - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+        - text/csv
+        - application/json
+        - application/xml
+        - text/html
+        - application/vnd.ms-excel # .xls
+        - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet # .xlsx
+
+        # === Code Formats ===
+        - text/x-python
+        - application/javascript
+        - text/css
+        - text/x-c
+        - text/x-csharp
+        - text/x-java-source
+        - text/x-shellscript
+
+        # === Audio/Video (For Multimodal Analysis) ===
+        - audio/mpeg  # .mp3
+        - audio/wav
+        - video/mp4
+        - video/webm
+        - video/quicktime # .mov
